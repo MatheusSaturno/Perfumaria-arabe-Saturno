@@ -58,7 +58,7 @@ const PRODUTOS = [
   {
     id: 5,
     nome: "Watani",
-    marca: "Jo Malone (Inspirado)",
+    marca: "Jo Malone",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -296,7 +296,7 @@ const PRODUTOS = [
   {
     id: 22,
     nome: "Asad",
-    marca: "Dior (Inspirado)",
+    marca: "Dior",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -338,7 +338,7 @@ const PRODUTOS = [
   {
     id: 25,
     nome: "Asad Elixir",
-    marca: "Moroccanoil (Inspirado)",
+    marca: "Moroccanoil",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -394,7 +394,7 @@ const PRODUTOS = [
   {
     id: 29,
     nome: "Indomable Sea Blue",
-    marca: "Lattafa (Inspirado)",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
