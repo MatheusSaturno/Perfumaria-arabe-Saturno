@@ -34,6 +34,13 @@
           </div>
         </div>
 
+        <nav class="primary-nav" aria-label="Navegação principal">
+          <a href="#inicio">Início</a>
+          <a href="#catalogo">Perfumes árabes</a>
+          <a href="#catalogo">Novidades</a>
+          <a href="#sobre">Sobre nós</a>
+        </nav>
+
         <div class="header-actions">
           <button class="btn-cart-nav" id="btnCartNav">
             <span>🛍️ Sacola</span>
@@ -42,7 +49,47 @@
         </div>
       </div>
 
-      <!-- Barra de Busca -->
+    </div>
+  </header>
+
+  <section class="hero-banner" id="inicio" aria-labelledby="heroTitle">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-kicker">PERFUMARIA ÁRABE <span></span> CURADORIA EXCLUSIVA</p>
+        <h2 id="heroTitle">Descubra a magia <em>do Oriente</em></h2>
+        <p class="hero-description">Fragrâncias intensas, misteriosas e envolventes para marcar presença por onde você passar.</p>
+        <a class="hero-cta" href="#catalogo">Explorar perfumes <span aria-hidden="true">→</span></a>
+        <p class="hero-signature">Fragrâncias de outro mundo</p>
+      </div>
+
+      <div class="hero-showcase" aria-label="Destaques da coleção">
+        <figure class="hero-product hero-product-one">
+          <img src="fotos/01.webp" alt="Durrat Al Aroos, perfume em destaque" />
+          <figcaption><span>ESSÊNCIA FEMININA</span><strong>Durrat Al Aroos</strong></figcaption>
+        </figure>
+        <figure class="hero-product hero-product-two">
+          <img src="fotos/05.webp" alt="Watani, perfume em destaque" />
+          <figcaption><span>ÍCONE ORIENTAL</span><strong>Watani</strong></figcaption>
+        </figure>
+        <figure class="hero-product hero-product-three">
+          <img src="fotos/02.webp" alt="Ramz Lattafa, perfume em destaque" />
+          <figcaption><span>ASSINATURA MARCANTE</span><strong>Ramz Lattafa</strong></figcaption>
+        </figure>
+      </div>
+      <div class="hero-glow" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- Conteúdo Principal -->
+  <main class="main-content">
+    <!-- Cabeçalho Exclusivo para Impressão / PDF -->
+    <div class="print-header" id="printHeader">
+      <h1 class="print-title">PERFUMARIA DO SATURNO • CATÁLOGO DE PRODUTOS</h1>
+      <p class="print-subtitle">Fragrâncias de outro mundo • Perfumes originais • Pronta entrega</p>
+      <p class="print-contact" id="printContactText">📱 Pedidos pelo WhatsApp: Amélia: (11) 96903-6139, Nathaniel: (11) 99736-9986</p>
+    </div>
+
+    <section class="catalog-toolbar" id="catalogo" aria-label="Buscar e filtrar perfumes">
       <div class="search-bar-wrap">
         <span class="search-icon-left">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -55,39 +102,18 @@
         <button id="btnClearSearch" class="btn-clear-search">✕</button>
       </div>
 
-      <!-- Filtros de Categorias e Marcas -->
       <div class="filters-row">
         <div class="category-tabs">
-          <button class="tab-btn active" data-category="todos">
-            🔥 Todos (43)
-          </button>
-          <button class="tab-btn" data-category="feminino">
-            🌸 Femininos
-          </button>
-          <button class="tab-btn" data-category="masculino">
-            👑 Masculinos
-          </button>
-          <button class="tab-btn" data-category="unissex">
-            ✨ Unissex
-          </button>
+          <button class="tab-btn active" data-category="todos">🔥 Todos (43)</button>
+          <button class="tab-btn" data-category="feminino">🌸 Femininos</button>
+          <button class="tab-btn" data-category="masculino">👑 Masculinos</button>
+          <button class="tab-btn" data-category="unissex">✨ Unissex</button>
         </div>
-
         <div class="brands-select-wrap" id="brandsFilterContainer">
           <!-- Marcas inseridas dinamicamente via JS -->
         </div>
       </div>
-
-    </div>
-  </header>
-
-  <!-- Conteúdo Principal -->
-  <main class="main-content">
-    <!-- Cabeçalho Exclusivo para Impressão / PDF -->
-    <div class="print-header" id="printHeader">
-      <h1 class="print-title">PERFUMARIA DO SATURNO • CATÁLOGO DE PRODUTOS</h1>
-      <p class="print-subtitle">Fragrâncias de outro mundo • Perfumes originais • Pronta entrega</p>
-      <p class="print-contact" id="printContactText">📱 Pedidos pelo WhatsApp: Amélia: (11) 96903-6139, Nathaniel: (11) 99736-9986</p>
-    </div>
+    </section>
 
     <div class="section-summary">
       <span id="visibleCount" class="summary-count">Carregando perfumes...</span>
@@ -100,7 +126,7 @@
   </main>
 
   <!-- Rodapé com Créditos do Desenvolvedor -->
-  <footer class="site-footer">
+  <footer class="site-footer" id="sobre">
     <div class="footer-container">
       <div class="footer-brand">
         <span class="footer-logo">Perfumaria do Saturno</span>
