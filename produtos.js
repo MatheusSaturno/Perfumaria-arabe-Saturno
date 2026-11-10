@@ -15,7 +15,7 @@ const PRODUTOS = [
   },
   {
     id: 2,
-    nome: "Ramz Lattafa (Silver)",
+    nome: "Ramz Lattafa",
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
