@@ -1,31 +1,34 @@
 :root {
-  --bg-primary: #0b0d11;
-  --bg-secondary: #131720;
-  --bg-card: #181d28;
-  --bg-card-hover: #1f2533;
-  --bg-input: #0e121a;
-  
-  --gold-primary: #e6b95c;
-  --gold-light: #fbe599;
-  --gold-dark: #b8860b;
-  --gold-gradient: linear-gradient(135deg, #fbe599 0%, #dfb15b 50%, #996515 100%);
+  --bg-primary: #f8f5ee;
+  --bg-secondary: #fffdf8;
+  --bg-card: #fffdf9;
+  --bg-card-hover: #f6f0e4;
+  --bg-input: #fffefa;
+
+  --gold-primary: #b78335;
+  --gold-light: #26344b;
+  --gold-dark: #8d6427;
+  --gold-gradient: linear-gradient(135deg, #f7e7bd 0%, #d7ad62 52%, #ad792d 100%);
   
   --whatsapp-green: #25d366;
   --whatsapp-hover: #20bd5a;
   
-  --text-primary: #f8fafc;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  
-  --border-color: rgba(223, 177, 91, 0.15);
-  --border-active: rgba(223, 177, 91, 0.5);
+  --text-primary: #18243a;
+  --text-secondary: #586477;
+  --text-muted: #778194;
+  --brand-navy: #18243a;
+  --brand-cream: #f8f5ee;
+  --brand-gold: #b78335;
+
+  --border-color: rgba(173, 125, 45, 0.22);
+  --border-active: rgba(173, 125, 45, 0.58);
   --radius-sm: 8px;
   --radius-md: 14px;
   --radius-lg: 20px;
   --radius-full: 9999px;
   
-  --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-  --shadow-gold: 0 4px 20px rgba(223, 177, 91, 0.2);
+  --shadow-card: 0 12px 30px -14px rgba(34, 39, 50, 0.22);
+  --shadow-gold: 0 4px 18px rgba(183, 131, 53, 0.2);
   --shadow-whatsapp: 0 6px 20px rgba(37, 211, 102, 0.35);
   
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1371,4 +1374,361 @@ body {
 .copyright-text {
   font-size: 12px;
   color: var(--text-muted);
+}
+
+/* Identidade visual do cartão: marfim, azul-marinho e dourado */
+body {
+  font-family: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background:
+    radial-gradient(ellipse at 8% 5%, rgba(221, 193, 139, 0.18), transparent 34rem),
+    radial-gradient(ellipse at 94% 24%, rgba(226, 212, 187, 0.24), transparent 32rem),
+    var(--brand-cream);
+  color: var(--brand-navy);
+}
+
+.site-header {
+  background: linear-gradient(180deg, rgba(255, 254, 250, 0.97), rgba(248, 245, 238, 0.95));
+  border-bottom-color: var(--border-color);
+  box-shadow: 0 8px 26px rgba(32, 38, 49, 0.06);
+}
+
+.brand-icon {
+  width: 62px;
+  height: 62px;
+  padding: 3px;
+  overflow: hidden;
+  border: 1px solid var(--brand-gold);
+  border-radius: 50%;
+  background: #fffdf8;
+  box-shadow: var(--shadow-gold);
+}
+
+.brand-icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.brand-title {
+  color: var(--brand-navy);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.brand-tagline {
+  color: var(--brand-gold);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 17px;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+}
+
+.btn-config,
+.brand-chip,
+.search-input,
+.tab-btn,
+.btn-sub,
+.btn-share-sub {
+  background-color: var(--bg-secondary);
+  color: var(--text-secondary);
+}
+
+.btn-config:hover,
+.brand-chip:hover,
+.brand-chip.active {
+  background: #f2ead9;
+  color: var(--brand-navy);
+  border-color: var(--brand-gold);
+}
+
+.btn-cart-nav,
+.floating-cart-btn,
+.btn-banner-action {
+  color: var(--brand-navy);
+}
+
+.cart-counter {
+  background: var(--brand-navy);
+  color: #fffdf8;
+}
+
+.search-input {
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px rgba(32, 38, 49, 0.035);
+}
+
+.search-input::placeholder {
+  color: #838b98;
+}
+
+.search-icon-left,
+.btn-clear-search {
+  color: var(--text-muted);
+}
+
+.tab-btn {
+  border-color: rgba(173, 125, 45, 0.14);
+}
+
+.tab-btn.active {
+  background: #efe5d0;
+  color: var(--brand-navy);
+  border-color: var(--brand-gold);
+}
+
+.summary-count,
+.price-currency,
+.cart-item-price,
+.cart-total-value,
+.modal-notes-title,
+.drawer-title,
+.whatsapp-contact-title {
+  color: var(--brand-navy);
+}
+
+.zap-alert-banner {
+  background: #f2ead9;
+  color: var(--brand-navy);
+}
+
+.zap-alert-banner strong {
+  color: var(--brand-navy);
+}
+
+.perfume-card {
+  background: rgba(255, 253, 248, 0.96);
+  border-color: rgba(173, 125, 45, 0.2);
+}
+
+.perfume-card:hover {
+  background: #fffefa;
+  border-color: var(--brand-gold);
+  box-shadow: 0 16px 36px -16px rgba(30, 39, 55, 0.3);
+}
+
+.card-image-box {
+  background: radial-gradient(circle at center, #fffdf8 0%, #efe8da 100%);
+}
+
+.badge-featured {
+  color: var(--brand-navy);
+}
+
+.badge-vol {
+  background: rgba(24, 36, 58, 0.88);
+  color: #fffdf8;
+}
+
+.gender-feminino,
+.gender-masculino,
+.gender-unissex {
+  background: rgba(247, 239, 222, 0.96);
+  color: var(--brand-navy);
+  border: 1px solid rgba(183, 131, 53, 0.45);
+}
+
+.perfume-brand {
+  color: var(--brand-gold);
+}
+
+.perfume-name,
+.price-value,
+.modal-title,
+.cart-item-name {
+  color: var(--brand-navy);
+}
+
+.perfume-name:hover {
+  color: var(--brand-gold);
+}
+
+.perfume-insp {
+  background: #f4eddf;
+  color: var(--brand-navy);
+  border-left-color: var(--brand-gold);
+}
+
+.note-tag {
+  background: #f1eee7;
+  color: var(--text-secondary);
+}
+
+.price-container {
+  border-top-color: rgba(24, 36, 58, 0.12);
+}
+
+.btn-sub {
+  border-color: rgba(24, 36, 58, 0.11);
+  color: var(--brand-navy);
+}
+
+.btn-sub:hover {
+  background: #efe7d8;
+  border-color: var(--brand-gold);
+  color: var(--brand-navy);
+}
+
+.cart-drawer-overlay {
+  background: rgba(24, 36, 58, 0.42);
+}
+
+.cart-drawer {
+  background: var(--bg-secondary);
+  box-shadow: -10px 0 30px rgba(24, 36, 58, 0.18);
+}
+
+.drawer-header,
+.drawer-footer {
+  border-color: var(--border-color);
+}
+
+.drawer-footer,
+.cart-item,
+.modal-notes-box {
+  background: #faf7f0;
+}
+
+.cart-item {
+  border-color: var(--border-color);
+}
+
+.cart-item-img,
+.modal-img-wrap {
+  background: #f1ece2;
+}
+
+.cart-item-name,
+.cart-item-desc,
+.cart-total-row,
+.btn-close-drawer,
+.cart-item-count {
+  color: var(--brand-navy);
+}
+
+.btn-qty {
+  background: #fffdf8;
+  color: var(--brand-navy);
+  border-color: var(--border-color);
+}
+
+.modal-overlay {
+  background: rgba(24, 36, 58, 0.52);
+}
+
+.modal-content {
+  background: #fffdf8;
+  border-color: var(--border-color);
+  box-shadow: 0 25px 50px -18px rgba(24, 36, 58, 0.35);
+}
+
+.modal-close {
+  background: #f0eadf;
+  color: var(--brand-navy);
+}
+
+.modal-close:hover {
+  background: var(--brand-gold);
+  color: #fffdf8;
+}
+
+.modal-desc,
+.modal-brand,
+.whatsapp-contact-option span {
+  color: var(--text-secondary);
+}
+
+.modal-notes-box {
+  border-color: var(--border-color);
+}
+
+.toast {
+  background: #fffdf8;
+  color: var(--brand-navy);
+  border-color: var(--brand-gold);
+  box-shadow: 0 10px 25px rgba(24, 36, 58, 0.15);
+}
+
+.btn-share-card-action {
+  background: linear-gradient(135deg, #26344b 0%, #18243a 100%);
+  color: #fffdf8;
+  box-shadow: 0 4px 16px rgba(24, 36, 58, 0.2);
+}
+
+.btn-share-card-action:hover {
+  box-shadow: 0 6px 22px rgba(24, 36, 58, 0.28);
+}
+
+.card-share-modal {
+  background: #fffdf8;
+}
+
+.card-share-title,
+.btn-share-sub {
+  color: var(--brand-navy);
+}
+
+.card-preview-container {
+  background: #f1ece2;
+  box-shadow: 0 16px 40px rgba(24, 36, 58, 0.16);
+}
+
+.btn-share-sub {
+  border-color: var(--border-color);
+}
+
+.btn-share-sub:hover {
+  background: #f2ead9;
+  border-color: var(--brand-gold);
+  color: var(--brand-navy);
+}
+
+.site-footer {
+  background: linear-gradient(180deg, #f1ece2 0%, #e9e1d2 100%);
+  border-top-color: var(--border-color);
+  color: var(--text-secondary);
+}
+
+.footer-logo {
+  color: var(--brand-navy);
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 24px;
+  background: none;
+  -webkit-text-fill-color: currentColor;
+}
+
+.footer-desc,
+.copyright-text {
+  color: var(--text-secondary);
+}
+
+.dev-link {
+  background: #f8f5ee;
+  color: var(--brand-navy);
+}
+
+.dev-link:hover {
+  color: var(--brand-navy);
+}
+
+@media (max-width: 640px) {
+  .header-actions {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .brand-title {
+    font-size: 25px;
+  }
+
+  .brand-tagline {
+    font-size: 15px;
+  }
 }

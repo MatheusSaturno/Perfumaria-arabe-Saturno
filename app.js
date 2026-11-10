@@ -203,7 +203,7 @@ function renderizarProdutos() {
     grid.innerHTML = `
       <div style="grid-column: 1 / -1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
         <p style="font-size: 40px; margin-bottom: 12px;">🔍</p>
-        <h3 style="color: #fff; margin-bottom: 6px;">Nenhum perfume encontrado</h3>
+        <h3 style="color: var(--brand-navy); margin-bottom: 6px;">Nenhum perfume encontrado</h3>
         <p>Tente buscar por outro nome, marca ou nota olfativa.</p>
       </div>
     `;
@@ -411,7 +411,7 @@ function finalizarPedidoWhatsApp() {
 
   let totalItens = 0;
 
-  let mensagem = `🛍️ *CONSULTA DE PERFUMES - PERFUMARIA ÁRABE VIP*\n`;
+  let mensagem = `🛍️ *CONSULTA DE PERFUMES - PERFUMARIA DO SATURNO*\n`;
   mensagem += `----------------------------------------\n`;
 
   AppState.carrinho.forEach((item) => {
@@ -574,35 +574,35 @@ function gerarECompartilharCard(id) {
   img.onload = () => {
     // 1. Fundo com Gradiente de Luxo
     const grad = ctx.createLinearGradient(0, 0, 0, 1350);
-    grad.addColorStop(0, '#10141f');
-    grad.addColorStop(0.5, '#171e2c');
-    grad.addColorStop(1, '#0c0e14');
+    grad.addColorStop(0, '#fffefa');
+    grad.addColorStop(0.55, '#f8f5ee');
+    grad.addColorStop(1, '#eee7d9');
     ctx.fillStyle = grad;
     ctx.fillRect(0, 0, 1080, 1350);
 
     // 2. Moldura Dourada Dupla
-    ctx.strokeStyle = 'rgba(223, 177, 91, 0.4)';
+    ctx.strokeStyle = 'rgba(183, 131, 53, 0.75)';
     ctx.lineWidth = 4;
     ctx.strokeRect(36, 36, 1008, 1278);
 
-    ctx.strokeStyle = 'rgba(223, 177, 91, 0.15)';
+    ctx.strokeStyle = 'rgba(183, 131, 53, 0.26)';
     ctx.lineWidth = 1.5;
     ctx.strokeRect(48, 48, 984, 1254);
 
     // 3. Topo / Cabeçalho
     ctx.textAlign = 'center';
-    ctx.font = '800 28px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#dfb15b';
-    ctx.fillText('PERFUMARIA ÁRABE VIP', 540, 95);
+    ctx.font = '700 34px "Cormorant Garamond", Georgia, serif';
+    ctx.fillStyle = '#18243a';
+    ctx.fillText('PERFUMARIA DO SATURNO', 540, 92);
 
-    ctx.font = '600 18px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#94a3b8';
-    ctx.fillText('100% ORIGINAL & LACRADO • PRONTA ENTREGA', 540, 125);
+    ctx.font = 'italic 600 22px "Cormorant Garamond", Georgia, serif';
+    ctx.fillStyle = '#b78335';
+    ctx.fillText('fragrâncias de outro mundo', 540, 124);
 
     // 4. Glow Dourado de Fundo para o Produto
     const glow = ctx.createRadialGradient(540, 460, 40, 540, 460, 360);
-    glow.addColorStop(0, 'rgba(223, 177, 91, 0.22)');
-    glow.addColorStop(1, 'rgba(0, 0, 0, 0)');
+    glow.addColorStop(0, 'rgba(183, 131, 53, 0.12)');
+    glow.addColorStop(1, 'rgba(255, 255, 255, 0)');
     ctx.fillStyle = glow;
     ctx.fillRect(100, 100, 880, 720);
 
@@ -614,7 +614,7 @@ function gerarECompartilharCard(id) {
 
     ctx.save();
     roundRect(ctx, boxX, boxY, boxW, boxH, 26);
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#fffefa';
     ctx.fill();
     ctx.clip();
 
@@ -637,19 +637,19 @@ function gerarECompartilharCard(id) {
     ctx.restore();
 
     // Borda Dourada ao redor da Imagem
-    ctx.strokeStyle = 'rgba(223, 177, 91, 0.65)';
+    ctx.strokeStyle = 'rgba(183, 131, 53, 0.65)';
     ctx.lineWidth = 3;
     roundRect(ctx, boxX, boxY, boxW, boxH, 26);
     ctx.stroke();
 
     // 6. Marca, Concentração e Volume
     ctx.font = '700 22px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#dfb15b';
+    ctx.fillStyle = '#b78335';
     ctx.fillText(`${p.marca.toUpperCase()} • ${p.concentracao.toUpperCase()} (${p.volume})`, 540, 825);
 
     // 7. Nome do Perfume
     ctx.font = '800 46px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#18243a';
     ctx.fillText(p.nome, 540, 878);
 
     // 8. Selo de Inspiração Olfativa
@@ -663,16 +663,16 @@ function gerarECompartilharCard(id) {
       const pillX = 540 - pillW / 2;
       const pillY = 905;
 
-      ctx.fillStyle = 'rgba(223, 177, 91, 0.15)';
+      ctx.fillStyle = 'rgba(183, 131, 53, 0.1)';
       roundRect(ctx, pillX, pillY, pillW, pillH, 22);
       ctx.fill();
 
-      ctx.strokeStyle = '#dfb15b';
+      ctx.strokeStyle = '#b78335';
       ctx.lineWidth = 1.5;
       roundRect(ctx, pillX, pillY, pillW, pillH, 22);
       ctx.stroke();
 
-      ctx.fillStyle = '#fbe599';
+      ctx.fillStyle = '#18243a';
       ctx.fillText(inspText, 540, pillY + 30);
       nextY = 985;
     }
@@ -680,7 +680,7 @@ function gerarECompartilharCard(id) {
     // 9. Principais Notas
     const notasStr = `Notas: ${p.notas.slice(0, 4).join(' • ')}`;
     ctx.font = '500 20px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#94a3b8';
+    ctx.fillStyle = '#586477';
     ctx.fillText(notasStr, 540, nextY);
 
     // 10. Box de Destaque / Chamada de Contato
@@ -689,33 +689,33 @@ function gerarECompartilharCard(id) {
     const callBoxX = (1080 - callBoxW) / 2;
     const callBoxY = 1035;
 
-    ctx.fillStyle = '#101524';
+    ctx.fillStyle = '#f1eadc';
     roundRect(ctx, callBoxX, callBoxY, callBoxW, callBoxH, 20);
     ctx.fill();
 
-    ctx.strokeStyle = '#dfb15b';
+    ctx.strokeStyle = '#b78335';
     ctx.lineWidth = 2;
     roundRect(ctx, callBoxX, callBoxY, callBoxW, callBoxH, 20);
     ctx.stroke();
 
     ctx.font = '700 18px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#dfb15b';
+    ctx.fillStyle = '#8d6427';
     ctx.fillText('✨ FRAGRÂNCIA IMPORTADA ORIGINAL • ALTA FIXAÇÃO', 540, callBoxY + 42);
 
     ctx.font = '800 28px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#ffffff';
+    ctx.fillStyle = '#18243a';
     ctx.fillText('CONSULTE VALORES & PRONTA ENTREGA', 540, callBoxY + 82);
 
     // 11. Rodapé / Contato WhatsApp
     ctx.font = '700 24px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#25d366';
+    ctx.fillStyle = '#18243a';
     CONTATOS_WHATSAPP.forEach((contato, index) => {
       const telefoneFormatado = formatarTelefone(contato.telefone);
       ctx.fillText(`💬 ${contato.nome}: ${telefoneFormatado}`, 540, 1205 + index * 34);
     });
 
     ctx.font = '500 18px "Plus Jakarta Sans", sans-serif';
-    ctx.fillStyle = '#94a3b8';
+    ctx.fillStyle = '#586477';
     ctx.fillText('Envio Imediato • Aceitamos PIX e Cartão • Lacrado', 540, 1285);
 
     // 12. Salvar Dados e Abrir Modal de Compartilhamento
