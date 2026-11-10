@@ -75,26 +75,6 @@ function configurarEventos() {
     });
   });
 
-  // Configurar WhatsApp do Vendedor
-  document.getElementById('btnConfigZap').addEventListener('click', () => {
-    abrirModalConfigZap();
-  });
-
-  // Botões opcionais do header (sem funcionalidade crítica)
-  const btnQuickReplies = document.getElementById('btnQuickReplies');
-  if (btnQuickReplies) {
-    btnQuickReplies.addEventListener('click', () => {
-      mostrarToast('💬 Em breve: Respostas rápidas prontas para o WhatsApp!');
-    });
-  }
-
-  const btnPrintPdf = document.getElementById('btnPrintPdf');
-  if (btnPrintPdf) {
-    btnPrintPdf.addEventListener('click', () => {
-      mostrarToast('📄 Em breve: Exportar catálogo em PDF!');
-    });
-  }
-
   // Carrinho Drawer
   const btnCartNav = document.getElementById('btnCartNav');
   const floatingCartBtn = document.getElementById('floatingCartBtn');
@@ -210,49 +190,11 @@ function renderizarProdutos() {
     <div class="perfume-card" data-id="${p.id}">
       <div class="card-image-box" onclick="abrirModalDetalhes(${p.id})">
         <img class="card-image" src="${p.imagem}" alt="${p.nome}" loading="lazy" />
-        <div class="card-badge-top">
-          ${p.destaque ? '<span class="badge-featured">⭐ Mais Vendido</span>' : ''}
-          <span class="badge-vol">${p.volume} • ${p.concentracao}</span>
-        </div>
-        <span class="badge-gender gender-${p.categoria}">${p.genero}</span>
       </div>
 
       <div class="card-content">
-        <div class="perfume-brand">${p.marca}</div>
         <h3 class="perfume-name" onclick="abrirModalDetalhes(${p.id})">${p.nome}</h3>
-        
-        ${p.inspiracao ? `
-          <div class="perfume-insp">
-            <span>✨ Inspiração:</span>
-            <strong>${p.inspiracao}</strong>
-          </div>
-        ` : ''}
-
-        <div class="notes-chips">
-          ${p.notas.slice(0, 3).map(nota => `<span class="note-tag">${nota}</span>`).join('')}
-          ${p.notas.length > 3 ? `<span class="note-tag">+${p.notas.length - 3}</span>` : ''}
-        </div>
-
-        <div class="card-actions">
-          <button class="btn-whatsapp-order" type="button" onclick="pedirProdutoWhatsApp(${p.id})">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.199.534 1.286.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.179.182-.077.357.101.174.453.748.972 1.211.67.597 1.233.784 1.408.871.174.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
-            </svg>
-            Pedir no WhatsApp
-          </button>
-
-          <div class="action-sub-buttons" style="grid-template-columns: 1fr 1fr 1fr;">
-            <button class="btn-sub add-to-cart" onclick="adicionarAoCarrinho(${p.id})" title="Adicionar à sacola">
-              🛍️ Sacola
-            </button>
-            <button class="btn-sub" onclick="gerarECompartilharCard(${p.id})" title="Gerar card com foto e informações">
-              📸 Card
-            </button>
-            <button class="btn-sub" onclick="copiarTextoZap(${p.id})" title="Copiar texto para WhatsApp">
-              📋 Texto
-            </button>
-          </div>
-        </div>
+        <div class="perfume-brand">${p.marca}</div>
       </div>
     </div>
   `).join('');
@@ -434,7 +376,7 @@ function abrirModalDetalhes(id) {
         <img src="${p.imagem}" class="modal-img" alt="${p.nome}" />
       </div>
       <div class="modal-info">
-        <div class="modal-brand">${p.marca} • ${p.concentracao} (${p.volume})</div>
+        <div class="modal-brand">${p.marca} • ${p.concentracao} (${p.volume}) • ${p.genero}${p.destaque ? ' • Mais vendido' : ''}</div>
         <h2 class="modal-title">${p.nome}</h2>
         
         ${p.inspiracao ? `
