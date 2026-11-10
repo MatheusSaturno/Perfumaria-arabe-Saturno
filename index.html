@@ -95,7 +95,7 @@
     <div class="print-header" id="printHeader">
       <h1 class="print-title">🏺 PERFUMARIA ÁRABE Saturno • CATÁLOGO DE PRODUTOS</h1>
       <p class="print-subtitle">Fragrâncias Originais • Concentração Eau de Parfum • Pronta Entrega</p>
-      <p class="print-contact" id="printContactText">📱 Pedidos pelo WhatsApp: (11) 99999-9999</p>
+      <p class="print-contact" id="printContactText">📱 Pedidos pelo WhatsApp: Amélia: (11) 96903-6139, Nathaniel: (11) 99736-9986</p>
     </div>
 
     <div class="section-summary">
@@ -184,6 +184,26 @@
       <button class="modal-close" onclick="fecharModalDetalhes()">✕</button>
       <div class="modal-body" id="modalDetailsBody">
         <!-- Detalhes do perfume via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Seletor de contato para pedidos pelo WhatsApp -->
+  <div class="modal-overlay" id="whatsappContactOverlay">
+    <div class="modal-content whatsapp-contact-modal" role="dialog" aria-modal="true" aria-labelledby="whatsappContactTitle">
+      <button class="modal-close" type="button" aria-label="Fechar" onclick="fecharSeletorWhatsApp()">✕</button>
+      <div class="modal-body">
+        <h3 class="whatsapp-contact-title" id="whatsappContactTitle">Para qual WhatsApp deseja enviar?</h3>
+        <div class="whatsapp-contact-options">
+          <button class="whatsapp-contact-option" type="button" data-whatsapp-contact="5511969036139">
+            <strong>Amélia</strong>
+            <span>(11) 96903-6139</span>
+          </button>
+          <button class="whatsapp-contact-option" type="button" data-whatsapp-contact="5511997369986">
+            <strong>Nathaniel</strong>
+            <span>(11) 99736-9986</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>

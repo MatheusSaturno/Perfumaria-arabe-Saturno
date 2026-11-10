@@ -44,7 +44,7 @@ Ao clicar em qualquer perfume para abrir os detalhes:
 
 ### ⚙️ 3. Configurador de WhatsApp Integrado
 - Botão **`📱 Meu WhatsApp`** no topo da página: permite ao vendedor cadastrar ou alterar seu número com DDD a qualquer momento (*ex: `5511999998888`*).
-- O número fica salvo no `localStorage` do navegador e atualiza automaticamente todos os links de pedidos e o rodapé dos cards gerados.
+- O número fica salvo no `localStorage` do navegador para uso no compartilhamento. Os cards gerados exibem os contatos de Amélia (+55 (11) 96903-6139) e Nathaniel (+55 (11) 99736-9986); ao pedir um perfume ou consultar a sacola, o cliente escolhe um dos dois.
 
 ### 🛍️ 4. Sacola de Seleção de Perfumes (Carrinho Flutuante)
 - O cliente pode escolher 2, 3 ou mais perfumes e clicar em **`Adicionar à Sacola`**.
@@ -142,10 +142,10 @@ catalogo/
 - O catálogo abrirá imediatamente no seu navegador padrão (*Google Chrome, Microsoft Edge, etc.*).
 
 ### 2. Configurar o seu Número de WhatsApp
-1. No topo da página, clique no botão **`📱 Meu WhatsApp`**.
-2. Digite seu número com o código do país (55) e o DDD.  
+1. No topo da página, clique no botão **`📱 Meu WhatsApp`** para configurar seu número usado no compartilhamento.
+2. Digite o número com o código do país (55) e o DDD.  
    *Exemplo:* `5511999998888`
-3. Clique em **OK**. Todos os botões do catálogo agora direcionarão os clientes para o seu número!
+3. Clique em **OK**. Os cards gerados continuam exibindo os dois contatos para pedidos: Amélia ou Nathaniel.
 
 ### 3. Como Gerar e Compartilhar a Imagem de Divulgação
 1. Clique no perfume desejado para abrir a janela de detalhes (ou clique em **`📸 Card`** direto na vitrine).
@@ -175,5 +175,3 @@ Projeto desenvolvido com excelência por **Matheus Saturno**:
 * 🐙 **GitHub:** [@MatheusSaturno](https://github.com/MatheusSaturno)
 * 🔗 **Perfil:** [https://github.com/MatheusSaturno](https://github.com/MatheusSaturno)
 * 🚀 **Foco:** Aplicações web modernas, vitrines interativas e automação comercial para WhatsApp.
-
-

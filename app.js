@@ -5,8 +5,14 @@ const AppState = {
   filtroMarca: 'todas',
   buscaTexto: '',
   carrinho: [],
-  numeroWhatsApp: '5511999999999' // Vendedor pode alterar
+  numeroWhatsApp: '5511999999999', // Vendedor pode alterar
+  mensagemWhatsAppPendente: ''
 };
+
+const CONTATOS_WHATSAPP = [
+  { nome: 'Amélia', telefone: '5511969036139' },
+  { nome: 'Nathaniel', telefone: '5511997369986' }
+];
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
@@ -118,6 +124,19 @@ function configurarEventos() {
   // Finalizar Compra via WhatsApp
   document.getElementById('btnCheckoutWhatsApp').addEventListener('click', finalizarPedidoWhatsApp);
 
+  const whatsappContactOverlay = document.getElementById('whatsappContactOverlay');
+  whatsappContactOverlay.addEventListener('click', (e) => {
+    if (e.target === whatsappContactOverlay || e.target.closest('.modal-close')) {
+      fecharSeletorWhatsApp();
+    }
+  });
+
+  whatsappContactOverlay.querySelectorAll('[data-whatsapp-contact]').forEach((button) => {
+    button.addEventListener('click', () => {
+      abrirPedidoWhatsApp(button.dataset.whatsappContact);
+    });
+  });
+
   // Modal de Detalhes
   document.getElementById('modalOverlay').addEventListener('click', (e) => {
     if (e.target === document.getElementById('modalOverlay') || e.target.closest('.modal-close')) {
@@ -219,12 +238,12 @@ function renderizarProdutos() {
         </div>
 
         <div class="card-actions">
-          <a class="btn-whatsapp-order" href="${gerarLinkWhatsApp(p)}" target="_blank" rel="noopener">
+          <button class="btn-whatsapp-order" type="button" onclick="pedirProdutoWhatsApp(${p.id})">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.199.534 1.286.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.087.087-.179.182-.077.357.101.174.453.748.972 1.211.67.597 1.233.784 1.408.871.174.087.275.072.376-.043.101-.116.433-.506.549-.679.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.043.073.043.419-.101.824z"/>
             </svg>
             Pedir no WhatsApp
-          </a>
+          </button>
 
           <div class="action-sub-buttons" style="grid-template-columns: 1fr 1fr 1fr;">
             <button class="btn-sub add-to-cart" onclick="adicionarAoCarrinho(${p.id})" title="Adicionar à sacola">
@@ -243,11 +262,32 @@ function renderizarProdutos() {
   `).join('');
 }
 
-// Gerar Link do WhatsApp para 1 Produto
-function gerarLinkWhatsApp(produto) {
-  const fone = AppState.numeroWhatsApp.replace(/\D/g, '');
+// Preparar a mensagem para pedir um produto pelo WhatsApp
+function pedirProdutoWhatsApp(id) {
+  const produto = AppState.produtos.find(item => item.id === id);
+  if (!produto) return;
+
   const texto = `Olá! Vi no catálogo o perfume *${produto.nome}* (${produto.volume} - ${produto.marca}).\nGostaria de consultar o valor e a disponibilidade para pronta entrega!`;
-  return `https://wa.me/${fone}?text=${encodeURIComponent(texto)}`;
+  abrirSeletorWhatsApp(texto);
+}
+
+function abrirSeletorWhatsApp(mensagem) {
+  AppState.mensagemWhatsAppPendente = mensagem;
+  document.getElementById('whatsappContactOverlay').classList.add('open');
+}
+
+function fecharSeletorWhatsApp() {
+  document.getElementById('whatsappContactOverlay').classList.remove('open');
+  AppState.mensagemWhatsAppPendente = '';
+}
+
+function abrirPedidoWhatsApp(telefone) {
+  const contatoValido = CONTATOS_WHATSAPP.some(contato => contato.telefone === telefone);
+  if (!contatoValido || !AppState.mensagemWhatsAppPendente) return;
+
+  const link = `https://wa.me/${telefone}?text=${encodeURIComponent(AppState.mensagemWhatsAppPendente)}`;
+  fecharSeletorWhatsApp();
+  window.open(link, '_blank', 'noopener');
 }
 
 // Copiar Texto de Divulgação Formatado para o Vendedor
@@ -369,7 +409,6 @@ function finalizarPedidoWhatsApp() {
     return;
   }
 
-  const fone = AppState.numeroWhatsApp.replace(/\D/g, '');
   let totalItens = 0;
 
   let mensagem = `🛍️ *CONSULTA DE PERFUMES - PERFUMARIA ÁRABE VIP*\n`;
@@ -384,8 +423,7 @@ function finalizarPedidoWhatsApp() {
   mensagem += `📦 *Total Selecionado:* ${totalItens} perfumes\n\n`;
   mensagem += `Olá! Gostaria de consultar os valores e prazos de entrega para os perfumes acima. Estão disponíveis?`;
 
-  const link = `https://wa.me/${fone}?text=${encodeURIComponent(mensagem)}`;
-  window.open(link, '_blank');
+  abrirSeletorWhatsApp(mensagem);
 }
 
 // Modal de Detalhes do Perfume
@@ -420,9 +458,9 @@ function abrirModalDetalhes(id) {
         </div>
 
         <div class="card-actions" style="margin-top: auto;">
-          <a class="btn-whatsapp-order" href="${gerarLinkWhatsApp(p)}" target="_blank" rel="noopener">
+          <button class="btn-whatsapp-order" type="button" onclick="pedirProdutoWhatsApp(${p.id})">
             📱 Pedir Agora no WhatsApp
-          </a>
+          </button>
           <button class="btn-share-card-action" onclick="gerarECompartilharCard(${p.id})">
             📸 Compartilhar Imagem do Perfume
           </button>
@@ -669,14 +707,16 @@ function gerarECompartilharCard(id) {
     ctx.fillText('CONSULTE VALORES & PRONTA ENTREGA', 540, callBoxY + 82);
 
     // 11. Rodapé / Contato WhatsApp
-    const zapFormatado = formatarTelefone(AppState.numeroWhatsApp);
-    ctx.font = '700 28px "Plus Jakarta Sans", sans-serif';
+    ctx.font = '700 24px "Plus Jakarta Sans", sans-serif';
     ctx.fillStyle = '#25d366';
-    ctx.fillText(`💬 Peça no WhatsApp: ${zapFormatado}`, 540, 1210);
+    CONTATOS_WHATSAPP.forEach((contato, index) => {
+      const telefoneFormatado = formatarTelefone(contato.telefone);
+      ctx.fillText(`💬 ${contato.nome}: ${telefoneFormatado}`, 540, 1205 + index * 34);
+    });
 
     ctx.font = '500 18px "Plus Jakarta Sans", sans-serif';
     ctx.fillStyle = '#94a3b8';
-    ctx.fillText('Envio Imediato • Aceitamos PIX e Cartão • Lacrado', 540, 1250);
+    ctx.fillText('Envio Imediato • Aceitamos PIX e Cartão • Lacrado', 540, 1285);
 
     // 12. Salvar Dados e Abrir Modal de Compartilhamento
     const dataUrl = canvas.toDataURL('image/png');

@@ -8,9 +8,12 @@ Este guia e material foram criados para você começar a divulgar seus perfumes 
 
 No seu computador ou celular, você tem agora o arquivo **`index.html`**:
 1. **Basta dar dois cliques no arquivo `index.html`** para abrir o catálogo no seu navegador (Chrome, Edge, Safari, etc.).
-2. **Configurar seu WhatsApp**: Clique no botão **`📱 Meu WhatsApp`** no topo da página e digite seu número com DDD (ex: `5511999998888`). Pronto! Todos os botões de "Pedir no WhatsApp" e "Consultar Lista" enviarão as mensagens direto pro seu número.
-3. **Copiar Texto de Divulgação**: Em qualquer perfume, clique no botão **`📋 Texto`**. O catálogo copia na hora uma mensagem pronta com emojis, notas e inspiração para colar no WhatsApp.
-4. **Gerar Imagem de Divulgação**: Clique em **`📸 Card`** para gerar uma imagem personalizada em alta definição para postar no Status do WhatsApp ou mandar para clientes.
+2. **Enviar um pedido pelo WhatsApp**: Clique em **`Pedir no WhatsApp`** em um perfume ou em **`Consultar Lista no WhatsApp`** na sacola e escolha entre Amélia ou Nathaniel. A mensagem do produto ou da sacola será preenchida automaticamente.
+   - Amélia: `(11) 96903-6139`
+   - Nathaniel: `(11) 99736-9986`
+3. **Contatos nos cards**: As imagens geradas exibem os WhatsApps de Amélia (`+55 (11) 96903-6139`) e Nathaniel (`+55 (11) 99736-9986`).
+4. **Copiar Texto de Divulgação**: Em qualquer perfume, clique no botão **`📋 Texto`**. O catálogo copia na hora uma mensagem pronta com emojis, notas e inspiração para colar no WhatsApp.
+5. **Gerar Imagem de Divulgação**: Clique em **`📸 Card`** para gerar uma imagem personalizada em alta definição para postar no Status do WhatsApp ou mandar para clientes.
 
 ---
 
