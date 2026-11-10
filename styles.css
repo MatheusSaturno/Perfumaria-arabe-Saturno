@@ -1545,6 +1545,23 @@ body {
   color: var(--brand-navy);
 }
 
+.perfume-name,
+.modal-title,
+.cart-item-name,
+.drawer-title,
+.whatsapp-contact-title,
+.card-share-title {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.15px;
+}
+
+.perfume-brand {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
 .perfume-name:hover {
   color: var(--brand-gold);
 }
