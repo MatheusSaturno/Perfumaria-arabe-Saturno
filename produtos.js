@@ -58,7 +58,7 @@ const PRODUTOS = [
   {
     id: 5,
     nome: "Watani",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -100,7 +100,7 @@ const PRODUTOS = [
   {
     id: 8,
     nome: "Ameerati",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -114,7 +114,7 @@ const PRODUTOS = [
   {
     id: 9,
     nome: "Nawal Alexandrite",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -212,7 +212,7 @@ const PRODUTOS = [
   {
     id: 16,
     nome: "Sultan Al Lail",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -226,7 +226,7 @@ const PRODUTOS = [
   {
     id: 17,
     nome: "Shagaf Al Ward Gardenia",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -240,7 +240,7 @@ const PRODUTOS = [
   {
     id: 18,
     nome: "Shagaf Al Ward",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -254,7 +254,7 @@ const PRODUTOS = [
   {
     id: 19,
     nome: "Sabah Al Ward Sugar Rosa",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -268,7 +268,7 @@ const PRODUTOS = [
   {
     id: 20,
     nome: "Sabah Al Ward",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -282,7 +282,7 @@ const PRODUTOS = [
   {
     id: 21,
     nome: "Sabah Al Ward Garden of Eden",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -422,7 +422,7 @@ const PRODUTOS = [
   {
     id: 31,
     nome: "Thahaani",
-    marca: "Al wataniah",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
