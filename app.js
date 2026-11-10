@@ -26,13 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // Carregar Dados Salvos (Telefone e Carrinho)
 function carregarConfiguracoes() {
   const zapSalvo = localStorage.getItem('perfumes_whatsapp_numero');
-  const banner = document.getElementById('zapAlertBanner');
 
   if (zapSalvo) {
     AppState.numeroWhatsApp = zapSalvo;
-    if (banner) banner.style.display = 'none';
-  } else {
-    if (banner) banner.style.display = 'flex';
   }
 
   const carrinhoSalvo = localStorage.getItem('perfumes_carrinho');
@@ -492,8 +488,6 @@ function abrirModalConfigZap() {
     if (foneLimpo.length >= 10) {
       AppState.numeroWhatsApp = foneLimpo;
       localStorage.setItem('perfumes_whatsapp_numero', foneLimpo);
-      const banner = document.getElementById('zapAlertBanner');
-      if (banner) banner.style.display = 'none';
       renderizarProdutos();
       mostrarToast(`✅ WhatsApp atualizado para: ${foneLimpo}`);
     } else {
