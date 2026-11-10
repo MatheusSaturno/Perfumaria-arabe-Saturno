@@ -2,7 +2,7 @@ const PRODUTOS = [
   {
     id: 1,
     nome: "Durrat Al Aroos",
-    marca: "Al Wataniah Khususi",
+    marca: "Al Wataniah",
     volume: "85ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -58,7 +58,7 @@ const PRODUTOS = [
   {
     id: 5,
     nome: "Watani",
-    marca: "Jo Malone",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -72,7 +72,7 @@ const PRODUTOS = [
   {
     id: 6,
     nome: "Pure Aruba",
-    marca: "Lattafa",
+    marca: "Amaran Parfums",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -100,7 +100,7 @@ const PRODUTOS = [
   {
     id: 8,
     nome: "Ameerati",
-    marca: "Lattafa",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -114,7 +114,7 @@ const PRODUTOS = [
   {
     id: 9,
     nome: "Nawal Alexandrite",
-    marca: "Lattafa",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -142,7 +142,7 @@ const PRODUTOS = [
   {
     id: 11,
     nome: "Yara Elixir",
-    marca: "Ajmal",
+    marca: "Lattafa",
     volume: "60ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -156,7 +156,7 @@ const PRODUTOS = [
   {
     id: 12,
     nome: "Yara Candy",
-    marca: "Al Wataniah",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -170,8 +170,8 @@ const PRODUTOS = [
   {
     id: 13,
     nome: "Yara Moi",
-    marca: "Swiss Arabian",
-    volume: "75ml",
+    marca: "Lattafa",
+    volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
     categoria: "masculino",
@@ -184,7 +184,7 @@ const PRODUTOS = [
   {
     id: 14,
     nome: "Yara Tous",
-    marca: "Al Haramain",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -212,7 +212,7 @@ const PRODUTOS = [
   {
     id: 16,
     nome: "Sultan Al Lail",
-    marca: "Al Fares",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -226,7 +226,7 @@ const PRODUTOS = [
   {
     id: 17,
     nome: "Shagaf Al Ward Gardenia",
-    marca: "Surrati",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -240,7 +240,7 @@ const PRODUTOS = [
   {
     id: 18,
     nome: "Shagaf Al Ward",
-    marca: "Lattafa",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -254,7 +254,7 @@ const PRODUTOS = [
   {
     id: 19,
     nome: "Sabah Al Ward Sugar Rosa",
-    marca: "Al Wataniah",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -268,7 +268,7 @@ const PRODUTOS = [
   {
     id: 20,
     nome: "Sabah Al Ward",
-    marca: "Al Wataniah",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -282,7 +282,7 @@ const PRODUTOS = [
   {
     id: 21,
     nome: "Sabah Al Ward Garden of Eden",
-    marca: "Al Haramain",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -296,7 +296,7 @@ const PRODUTOS = [
   {
     id: 22,
     nome: "Asad",
-    marca: "Dior",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -310,8 +310,8 @@ const PRODUTOS = [
   {
     id: 23,
     nome: "Asad Bourbon",
-    marca: "Parfums de Marly (Inspirado)",
-    volume: "75ml",
+    marca: "Lattafa",
+    volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
     categoria: "feminino",
@@ -324,7 +324,7 @@ const PRODUTOS = [
   {
     id: 24,
     nome: "Asad Zanzibar",
-    marca: "Al Fares",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -338,7 +338,7 @@ const PRODUTOS = [
   {
     id: 25,
     nome: "Asad Elixir",
-    marca: "Moroccanoil",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -352,7 +352,7 @@ const PRODUTOS = [
   {
     id: 26,
     nome: "Al Noble Ameer",
-    marca: "Al Fares",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -366,7 +366,7 @@ const PRODUTOS = [
   {
     id: 27,
     nome: "Al Noble Wazeer",
-    marca: "Fragrance World",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -394,7 +394,7 @@ const PRODUTOS = [
   {
     id: 29,
     nome: "Indomable Sea Blue",
-    marca: "Lattafa",
+    marca: "Sea Blue",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -408,7 +408,7 @@ const PRODUTOS = [
   {
     id: 30,
     nome: "Virtus X Sea Blue",
-    marca: "Al Fares",
+    marca: "Sea Blue",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -422,7 +422,7 @@ const PRODUTOS = [
   {
     id: 31,
     nome: "Thahaani",
-    marca: "Fragrance World",
+    marca: "Al wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -436,7 +436,7 @@ const PRODUTOS = [
   {
     id: 32,
     nome: "Arabia Hamad",
-    marca: "Surrati",
+    marca: "Le chameau",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -450,7 +450,7 @@ const PRODUTOS = [
   {
     id: 33,
     nome: "Arabia The Beauty",
-    marca: "Fragrance World",
+    marca: "Le chameau",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -464,7 +464,7 @@ const PRODUTOS = [
   {
     id: 34,
     nome: "Afeef Lattafa Pride",
-    marca: "Al Haramain",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -478,7 +478,7 @@ const PRODUTOS = [
   {
     id: 35,
     nome: "La Rouge Baroque",
-    marca: "Al Fares",
+    marca: "Maison Alhambra",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -492,7 +492,7 @@ const PRODUTOS = [
   {
     id: 36,
     nome: "Attar Al Wesal",
-    marca: "Al Haramain",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -506,7 +506,7 @@ const PRODUTOS = [
   {
     id: 37,
     nome: "Fakhar Black Men",
-    marca: "Surrati",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -520,7 +520,7 @@ const PRODUTOS = [
   {
     id: 38,
     nome: "Eqaab",
-    marca: "Lattafa",
+    marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -534,7 +534,7 @@ const PRODUTOS = [
   {
     id: 39,
     nome: "Shahd",
-    marca: "Al Wataniah",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
@@ -548,7 +548,7 @@ const PRODUTOS = [
   {
     id: 40,
     nome: "Fakhar White Woman",
-    marca: "Al Haramain",
+    marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Feminino",
@@ -562,7 +562,7 @@ const PRODUTOS = [
   {
     id: 41,
     nome: "Delilah Pour Femme",
-    marca: "Al Haramain",
+    marca: "Maison Alhambra",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Unissex",
@@ -576,7 +576,7 @@ const PRODUTOS = [
   {
     id: 42,
     nome: "Basir",
-    marca: "Ard Al Zaafaran",
+    marca: "Mawwal arabia",
     volume: "100ml",
     concentracao: "Eau de Parfum",
     genero: "Masculino",
