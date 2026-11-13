@@ -105,7 +105,7 @@ Ao clicar em qualquer perfume para abrir os detalhes:
 | **32** | Thahaani | Al Wataniah | 100ml EDP | Unissex | Azul marinho e dourado com rosas e pêssego |
 | **33** | Arabia Hamad | Le Chameau | 100ml EDP | Masculino | Frasco azul com camelo prateado na cúpula |
 | **34** | Arabia The Beauty | Le Chameau | 100ml EDP | Feminino | Frasco verde esmeralda com camelo dourado |
-| **35** | Afeef | Lattafa Pride | 100ml EDP | Feminino | Obra de arte com pavões dourados cravejados |
+| **35** | Afeef | Lattafa Pride | 100ml EDP | Unissex | Obra de arte com pavões dourados cravejados |
 | **36** | La Rouge Baroque | Maison Alhambra | 100ml EDP | Unissex | Maison Francis Kurkdjian - Baccarat Rouge 540 |
 | **37** | Attar Al Wesal | Al Wataniah | 100ml EDP | Masculino | JPG Ultra Male / Armani Code Profumo |
 | **38** | Fakhar Black (Men) | Lattafa Pride | 100ml EDP | Masculino | Yves Saint Laurent - Y Eau de Parfum |

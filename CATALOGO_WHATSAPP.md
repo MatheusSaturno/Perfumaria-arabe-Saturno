@@ -118,7 +118,6 @@ Significa "Bom Dia das Rosas"!
 • Watani Al Wataniah (Frutado com Arabescos)
 • Nawal Alexandrite (Floral Aveludado)
 • Arabia The Beauty Camelo (Floral Frutado Doce)
-• Afeef Lattafa Pride (Pavão Dourado de Luxo)
 
 👑 *MASCULINOS:*
 • Asad Preto (Insp. Dior Sauvage Elixir)
@@ -143,6 +142,7 @@ Significa "Bom Dia das Rosas"!
 • Al Noble Ameer (Cervo Preto / Maçã e Alecrim)
 • Al Noble Wazeer (Cervo Marrom / Chocolate e Menta)
 • Al Noble Safeer (Cervo Verde / Herbal Nobre)
+• Afeef Lattafa Pride (Pavão Dourado de Luxo)
 • Ameerati Al Wataniah (Realeza Imperial Verde)
 • Thahaani Al Wataniah (Azul Marinho Real)
 • Amante Thoq Al Hawamer (Vinho Cavalo Árabe)

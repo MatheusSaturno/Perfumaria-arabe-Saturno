@@ -24,7 +24,7 @@ const PRODUTOS = [
     destaque: true,
     inspiracao: "Jean Paul Gaultier - Ultra Male",
     imagem: "fotos/02.webp",
-    notas: ["Lavanda", "Hortelã", "Maçã", "Baunilha", "Patchouli"],
+    notas: ["Pera", "Lavanda", "Hortelã", "Bergamota", "Cardamomo", "Sálvia", "Baunilha", "Âmbar", "Patchouli"],
     descricao: "Perfume doce baladeiro e sedutor. Abre fresco e frutado com maçã e menta, evoluindo para uma baunilha envolvente e irresistível."
   },
   {
@@ -33,13 +33,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: true,
     inspiracao: "Lancome - La Vie Est Belle",
     imagem: "fotos/03.webp",
-    notas: ["Baunilha", "Iris", "Groselha", "Almíscar", "Âmbar"],
-    descricao: "O queridinho das mulheres. Doce, frutado e marcante. Inspiração clara no clássico La Vie Est Belle com uma personalidade árabe única e irresistível."
+    notas: ["Açafrão", "Limão", "Manga", "Coco", "Almíscar", "Âmbar"],
+    descricao: "Fragrância compartilhável, doce e frutada, com notas de açafrão, manga e coco sobre uma base almiscarada e ambarada."
   },
   {
     id: 4,
@@ -47,13 +47,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: true,
     inspiracao: "Dior Sauvage",
     imagem: "fotos/04.webp",
-    notas: ["Bergamota", "Pimenta", "Lavanda", "Cedro", "Almíscar"],
-    descricao: "O Sauvage árabe. Fresco, selvagem e masculino. Abertura cítrica explosiva que evolui para um fundo amadeirado profundo e sedutor. Para o homem confiante."
+    notas: ["Bergamota", "Laranja", "Especiarias", "Coco", "Ylang-ylang", "Sândalo", "Almíscar", "Benjoim"],
+    descricao: "Amadeirado aromático compartilhável, com abertura cítrica e especiada, coração cremoso de coco e ylang-ylang e fundo de madeiras e almíscar."
   },
   {
     id: 5,
@@ -61,8 +61,8 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Jo Malone - Velvet Rose & Oud",
     imagem: "fotos/05.webp",
@@ -80,8 +80,8 @@ const PRODUTOS = [
     destaque: true,
     inspiracao: "Baccarat Rouge 540",
     imagem: "fotos/06.webp",
-    notas: ["Jasmim", "Baunilha", "Almíscar", "Âmbar", "Canela"],
-    descricao: "O clone perfeito do Baccarat Rouge 540. Sofisticado, envolvente e exclusivo. Uma fragrância que gruda na memória de quem sente."
+    notas: ["Laranja Siciliana", "Bergamota", "Limão", "Frutas Mediterrâneas", "Almíscar Branco", "Âmbar", "Baunilha"],
+    descricao: "Fragrância compartilhável de perfil frutado e almiscarado, com presença marcante e versátil."
   },
   {
     id: 7,
@@ -89,12 +89,12 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: false,
     inspiracao: "Maison Francis Kurkdjian - Oud Satin Mood",
     imagem: "fotos/07.webp",
-    notas: ["Oud", "Rosa", "Baunilha", "Almíscar", "Âmbar"],
+    notas: ["Maçã", "Cardamomo", "Bergamota", "Lavanda", "Gerânio", "Patchouli", "Fava Tonka", "Vetiver"],
     descricao: "Oud atemporal com alma de luxo. Uma fragrância que transcende gêneros com sua riqueza oriental e elegância inconfundível."
   },
   {
@@ -103,8 +103,8 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: false,
     inspiracao: "Versace - Crystal Noir",
     imagem: "fotos/08.jpg",
@@ -117,8 +117,8 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Tom Ford - Tobacco Vanille",
     imagem: "fotos/09.webp",
@@ -131,12 +131,12 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "60ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Glossy / Gourmand Moderno",
     imagem: "fotos/10.webp",
-    notas: ["Baunilha", "Almíscar", "Fava Tonka", "Leite", "Flor de Laranjeira"],
+    notas: ["Orquídea", "Heliotrópio", "Tangerina", "Frutas Tropicais", "Baunilha", "Sândalo", "Almíscar"],
     descricao: "Suave, leitoso e irresistivelmente doce. Uma pele perfumada que chama atenção onde quer que você vá. Levinho e viciante."
   },
   {
@@ -145,12 +145,12 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "60ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Luxo Oriental / Oud Clássico",
     imagem: "fotos/11.webp",
-    notas: ["Oud", "Rosa", "Sândalo", "Âmbar", "Especiarias"],
+    notas: ["Groselha Preta", "Caramelo", "Baunilha", "Almíscar", "Âmbar"],
     descricao: "Clássico árabe com profundidade e elegância. Uma mistura tradicional de oud e rosas que representa o refinamento do Oriente Médio."
   },
   {
@@ -159,13 +159,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Viktor & Rolf - Spicebomb Extreme",
     imagem: "fotos/12.webp",
-    notas: ["Oud", "Baunilha", "Couro", "Âmbar", "Almíscar"],
-    descricao: "Oud aveludado com couro e baunilha. Uma fragrância de impacto que combina a força do oriente com a sofisticação contemporânea."
+    notas: ["Mandarina Verde", "Groselha Preta", "Morango", "Gardênia", "Xarope de Baunilha", "Almíscar", "Âmbar"],
+    descricao: "Gourmand frutado e feminino, com mandarina verde e groselha preta sobre um coração de morango e gardênia, finalizado por baunilha, almíscar e âmbar."
   },
   {
     id: 13,
@@ -173,13 +173,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Luxo Árabe / Oud Negro",
     imagem: "fotos/13.webp",
-    notas: ["Oud Negro", "Sândalo", "Âmbar", "Couro", "Almíscar"],
-    descricao: "O oud mais profundo e misterioso. Uma fragrância masculina de impacto com oud escuro e notas amadeiradas que ficam horas na pele."
+    notas: ["Jasmim", "Pêssego", "Caramelo", "Âmbar", "Patchouli", "Sândalo"],
+    descricao: "Fragrância feminina frutada e gourmand, combinando pêssego e jasmim com caramelo, âmbar e madeiras."
   },
   {
     id: 14,
@@ -187,13 +187,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Perfume Sagrado / Oriente Clássico",
     imagem: "fotos/14.webp",
-    notas: ["Oud", "Rosa", "Sândalo", "Âmbar", "Almíscar"],
-    descricao: "Inspirado nos aromas sagrados da Kaaba. Uma fragrância espiritual, profunda e envolvente que conecta o usuário à essência do Oriente."
+    notas: ["Manga", "Coco", "Maracujá", "Jasmim", "Heliotrópio", "Flor de Laranjeira", "Cashmeran", "Baunilha", "Almíscar"],
+    descricao: "Fragrância feminina tropical, com manga, coco e maracujá sobre um coração floral e uma base macia de baunilha e almíscar."
   },
   {
     id: 15,
@@ -201,13 +201,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: false,
     inspiracao: "Paco Rabanne - 1 Million",
     imagem: "fotos/15.webp",
     notas: ["Couro", "Âmbar", "Especiarias", "Cedro", "Patchouli"],
-    descricao: "Luxuoso, especiado e marcante. Uma fragrância masculina que irradia confiança e status. Perfeita para ocasiões especiais e ambientes noturnos."
+    descricao: "Fragrância compartilhável de perfil especiado e amadeirado, com couro, âmbar, cedro e patchouli."
   },
   {
     id: 16,
@@ -215,8 +215,8 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: false,
     inspiracao: "Elixir Dourado / Alta Perfumaria",
     imagem: "fotos/16.jpg",
@@ -229,8 +229,8 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Diamante / Alta Joalheria",
     imagem: "fotos/17.webp",
@@ -243,13 +243,13 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Chanel - Allure Homme Sport",
     imagem: "fotos/18.webp",
     notas: ["Bergamota", "Lavanda", "Cedro", "Almíscar", "Âmbar"],
-    descricao: "Fresco e dinâmico. Um perfume masculino polivalente que funciona tanto no trabalho quanto numa noite especial. Clássico e moderno ao mesmo tempo."
+    descricao: "Fragrância feminina de perfil fresco e floral, com notas cítricas e aromáticas sobre uma base amadeirada e almiscarada."
   },
   {
     id: 19,
@@ -299,12 +299,12 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: false,
     inspiracao: "Dior - Oud Ispahan",
     imagem: "fotos/22.webp",
-    notas: ["Oud", "Rosa", "Labdanum", "Patchouli", "Âmbar"],
+    notas: ["Pimenta-preta", "Abacaxi", "Tabaco", "Café", "Patchouli", "Íris", "Baunilha", "Âmbar", "Madeiras Secas", "Benjoim", "Ládano"],
     descricao: "O romance persa do oud. Inspirado na cidade de Isfahan, combina oud puro com rosas persas num abraço quente e inesquecível."
   },
   {
@@ -313,13 +313,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: true,
-    inspiracao: "Parfums de Marly - Delina",
+    inspiracao: "Baunilha Bourbon / Oriental Especiado",
     imagem: "fotos/23.webp",
-    notas: ["Lichia", "Rosa", "Peônia", "Almíscar", "Noz-moscada"],
-    descricao: "Delicado, feminino e inesquecível. Inspirado no queridinho das mulheres sofisticadas: Delina de Parfums de Marly. Floral frutado que conquista corações."
+    notas: ["Pimenta Rosa", "Lavanda", "Ameixa Mirabelle", "Cacau", "Davana", "Noz-moscada", "Baunilha Bourbon", "Âmbar", "Vetiver"],
+    descricao: "Fragrância masculina quente e especiada, com lavanda e ameixa na abertura, cacau no coração e baunilha bourbon, âmbar e vetiver no fundo."
   },
   {
     id: 24,
@@ -332,8 +332,8 @@ const PRODUTOS = [
     destaque: false,
     inspiracao: "Perfume do Cavaleiro / Masculino Oriental",
     imagem: "fotos/24.webp",
-    notas: ["Couro", "Âmbar", "Cedro", "Especiarias", "Almíscar"],
-    descricao: "O perfume do cavaleiro árabe. Viril, corajoso e marcante. Uma fragrância que exala força e elegância masculina com notas de couro e âmbar."
+    notas: ["Pimenta-preta", "Lavanda", "Água de Coco", "Sal Marinho", "Baunilha", "Incenso"],
+    descricao: "Fragrância masculina aromática e amadeirada, com lavanda e pimenta-preta contrastando com água de coco, sal marinho e incenso."
   },
   {
     id: 25,
@@ -341,13 +341,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: false,
     inspiracao: "Moroccanoil - Intense",
     imagem: "fotos/25.webp",
-    notas: ["Rosa Marroquina", "Jasmim", "Âmbar", "Almíscar", "Cedro"],
-    descricao: "Rosas do Marrocos em toda a sua plenitude. Uma experiência sensorial que transporta você para os bazares perfumados de Marrakech."
+    notas: ["Pimenta-preta", "Açafrão", "Toranja", "Tabaco", "Cedro", "Patchouli", "Baunilha", "Âmbar", "Ládano"],
+    descricao: "Fragrância masculina intensa e ambarada, com pimenta-preta, açafrão e toranja, seguida por tabaco, cedro e patchouli."
   },
   {
     id: 26,
@@ -360,7 +360,7 @@ const PRODUTOS = [
     destaque: false,
     inspiracao: "Creed - Aventus",
     imagem: "fotos/26.webp",
-    notas: ["Abacaxi", "Bétula", "Patchouli", "Âmbar", "Almíscar"],
+    notas: ["Maçã", "Alecrim", "Pimenta Rosa", "Patchouli", "Oud", "Almíscar", "Vetiver"],
     descricao: "Icônico como o original. Abertura frutal de abacaxi que evolui para notas amadeiradas e defumadas. Uma fragrância de liderança e sucesso."
   },
   {
@@ -374,7 +374,7 @@ const PRODUTOS = [
     destaque: true,
     inspiracao: "Baccarat Rouge 540 - MFK",
     imagem: "fotos/27.webp",
-    notas: ["Jasmim", "Açafrão", "Cedro", "Âmbar", "Almíscar"],
+    notas: ["Menta", "Chocolate", "Caramelo"],
     descricao: "O clone do perfume mais desejado do mundo por uma fração do preço. Sofisticado, luminoso e inesquecível. Idêntico ao original na projeção e fixação."
   },
   {
@@ -397,8 +397,8 @@ const PRODUTOS = [
     marca: "Sea Blue",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: true,
     inspiracao: "Kayali - Yummy Pistachio",
     imagem: "fotos/29.webp",
@@ -416,7 +416,7 @@ const PRODUTOS = [
     destaque: false,
     inspiracao: "Versace - Eros",
     imagem: "fotos/30.webp",
-    notas: ["Menta", "Maçã Verde", "Fava Tonka", "Baunilha", "Almíscar"],
+    notas: ["Menta", "Limão", "Maçã Verde", "Gerânio", "Fava Tonka", "Baunilha", "Cedro", "Vetiver"],
     descricao: "Fresco, jovem e vibrante. Uma explosão de frescor mentolado que evolui para notas doces e amadeiradas. Perfeito para o homem moderno e ativo."
   },
   {
@@ -425,13 +425,13 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: false,
     inspiracao: "Dolce & Gabbana - Light Blue",
     imagem: "fotos/31.jpg",
     notas: ["Bergamota", "Maçã", "Cedro", "Âmbar", "Almíscar"],
-    descricao: "Leveza mediterrânea em versão árabe. Fresco, aquático e feminino. Uma fragrância que evoca verão, brisas do mar e momentos felizes."
+    descricao: "Fragrância compartilhável de perfil fresco e frutado, com notas cítricas, maçã e fundo amadeirado e almiscarado."
   },
   {
     id: 32,
@@ -453,13 +453,13 @@ const PRODUTOS = [
     marca: "Le chameau",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Paco Rabanne - Invictus",
     imagem: "fotos/33.webp",
     notas: ["Toranja", "Néroli", "Âmbar", "Patchouli", "Almíscar"],
-    descricao: "O líder da juventude. Fresco, invicto e confiante. Inspirado no Invictus, uma fragrância que transmite energia, vigor e masculinidade incontestável."
+    descricao: "Fragrância feminina floral frutada, com abertura cítrica e um fundo quente de âmbar, patchouli e almíscar."
   },
   {
     id: 34,
@@ -467,13 +467,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: false,
     inspiracao: "Profissional / Executivo Árabe",
     imagem: "fotos/34.webp",
-    notas: ["Bergamota", "Lavanda", "Couro", "Âmbar", "Almíscar"],
-    descricao: "Elegância profissional. Perfeito para o ambiente de trabalho e reuniões importantes. Um perfume que inspira respeito e transmite autoridade com sutileza."
+    notas: ["Pêssego", "Bergamota", "Pimenta Rosa", "Tuberosa", "Flor de Laranjeira", "Jasmim", "Sândalo", "Patchouli", "Pralinê"],
+    descricao: "Fragrância compartilhável floral frutada, com pêssego e bergamota, flores brancas e uma base cremosa de sândalo, patchouli e pralinê."
   },
   {
     id: 35,
@@ -481,13 +481,13 @@ const PRODUTOS = [
     marca: "Maison Alhambra",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: false,
     inspiracao: "Floral Suave / Feminino Árabe",
     imagem: "fotos/35.webp",
-    notas: ["Rosa", "Almíscar Branco", "Âmbar", "Baunilha", "Sândalo"],
-    descricao: "Suavidade e feminilidade em cada borrifada. Uma fragrância delicada e romântica que envolve a pele com pétalas de rosa e notas amanteigadas."
+    notas: ["Açafrão", "Jasmim", "Madeira de Âmbar", "Âmbar Cinzento", "Resina de Abeto", "Cedro"],
+    descricao: "Fragrância compartilhável de perfil ambarado e floral, com açafrão e jasmim sobre madeiras e resinas."
   },
   {
     id: 36,
@@ -509,13 +509,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: false,
     inspiracao: "Oud Premium / Oriental Clássico",
     imagem: "fotos/37.webp",
-    notas: ["Oud", "Rosa", "Âmbar", "Especiarias", "Almíscar"],
-    descricao: "O oud da Surrati em toda sua expressão. Uma fragrância rica e intensa que celebra a tradição olfativa árabe com elegância e profundidade."
+    notas: ["Maçã", "Bergamota", "Gengibre", "Lavanda", "Sálvia", "Zimbro", "Madeira de Âmbar", "Fava Tonka", "Cedro", "Vetiver"],
+    descricao: "Fragrância masculina aromática e amadeirada, com maçã, bergamota e gengibre na abertura, lavanda no coração e madeiras no fundo."
   },
   {
     id: 38,
@@ -523,13 +523,13 @@ const PRODUTOS = [
     marca: "Al Wataniah",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Feminino",
-    categoria: "feminino",
+    genero: "Masculino",
+    categoria: "masculino",
     destaque: false,
-    inspiracao: "Floral Oud Feminino",
+    inspiracao: "Cítrico Aromático Marinho",
     imagem: "fotos/38.webp",
-    notas: ["Oud", "Rosa", "Peônia", "Âmbar", "Almíscar Branco"],
-    descricao: "O lado feminino do Badee Al Oud. Floral com oud suavizado, criando uma fragrância encantadora que une o melhor do oriente com a delicadeza feminina."
+    notas: ["Bergamota", "Notas Marinhas", "Notas Aromáticas", "Cedro", "Almíscar"],
+    descricao: "Fragrância masculina fresca e aromática, com perfil marinho e amadeirado."
   },
   {
     id: 39,
@@ -537,13 +537,13 @@ const PRODUTOS = [
     marca: "Lattafa",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Oud Nobre / Oriental Masculino",
     imagem: "fotos/39.jpg",
-    notas: ["Oud", "Couro", "Âmbar", "Especiarias", "Cedro"],
-    descricao: "A glória do oud. Majestoso e marcante, perfeito para o homem que não passa despercebido. Um perfume com história e profundidade."
+    notas: ["Rosa", "Íris", "Almíscar", "Cedro", "Vetiver"],
+    descricao: "Fragrância feminina de perfil ambarado e almiscarado, com presença marcante e acabamento elegante."
   },
   {
     id: 40,
@@ -556,7 +556,7 @@ const PRODUTOS = [
     destaque: false,
     inspiracao: "Floral Puro / Feminino Clássico",
     imagem: "fotos/40.webp",
-    notas: ["Jasmim", "Rosa", "Almíscar Branco", "Âmbar", "Cedro"],
+    notas: ["Romã", "Pêssego", "Maçã", "Tuberosa", "Jasmim", "Rosa", "Baunilha", "Sândalo", "Almíscar"],
     descricao: "Pura como uma flor. Um bouquet floral delicado e elegante que simboliza a beleza natural da mulher árabe. Suave e inesquecível."
   },
   {
@@ -565,13 +565,13 @@ const PRODUTOS = [
     marca: "Maison Alhambra",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Unissex",
-    categoria: "unissex",
+    genero: "Feminino",
+    categoria: "feminino",
     destaque: false,
     inspiracao: "Amadeirado Âmbar / Moderno",
     imagem: "fotos/41.webp",
-    notas: ["Âmbar", "Cedro", "Almíscar", "Sândalo", "Baunilha"],
-    descricao: "Amadeirado envolvente e aveludado. Um perfume que aquece a pele com âmbar dourado e madeiras nobres. Elegante, duradouro e contemporâneo."
+    notas: ["Ruibarbo", "Lichia", "Bergamota", "Rosa Turca", "Peônia", "Baunilha", "Cashmeran", "Almíscar", "Vetiver", "Incenso"],
+    descricao: "Fragrância feminina floral frutada, com ruibarbo, lichia, bergamota, rosa e peônia sobre uma base de baunilha, almíscar e madeiras."
   },
   {
     id: 42,
@@ -579,13 +579,13 @@ const PRODUTOS = [
     marca: "Mawwal arabia",
     volume: "100ml",
     concentracao: "Eau de Parfum",
-    genero: "Masculino",
-    categoria: "masculino",
+    genero: "Unissex",
+    categoria: "unissex",
     destaque: false,
     inspiracao: "Bleu de Chanel",
     imagem: "fotos/42.webp",
     notas: ["Cedro", "Bergamota", "Almíscar", "Âmbar", "Patchouli"],
-    descricao: "O Bleu de Chanel árabe. Fresco, sofisticado e masculino. Uma interpretação oriental do clássico francês, com fixação superior e personalidade única."
+    descricao: "Fragrância compartilhável fresca e amadeirada, com bergamota, cedro, patchouli e um fundo ambarado e almiscarado."
   },
   {
     id: 43,
